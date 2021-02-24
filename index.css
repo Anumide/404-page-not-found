@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "inconsolata", "lucida console";
+}
+
+.container{
+  background: #fff;
+  width: 95%;
+  margin: 2% auto;
+  padding: 0;
+}
+
+.flex_content{
+  background: transparent;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 6% auto;
+  padding: 0 2%;
+}
+
+.flex_content_1{
+  width: 85%;
+  margin-left: 5%;
+}
+
+#image{
+  width: 90%
+}
+
+.flex_content_2 h1{
+  margin: 0;
+  max-width: 80%;
+  line-height: 3rem;
+  margin-bottom: 2%;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.flex_content_2 p{
+  line-height: 1.5rem;
+  font-weight: 100;
+  margin-top: 11%;
+  margin-bottom: 5%;
+  max-width: 70%;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+span{
+  background: #333;
+  padding: 3%;
+}
+
+span a{
+  color: #eee;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+}
+
+footer p{
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #333;
+}
+
+footer p a{
+  color: inherit;
+  font-weight: bold;
+}
