@@ -1,9 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
 
 *{
   margin: 0;
   box-sizing: border-box;
-  font-family: "inconsolata", "lucida console";
+  font-family: 'Roboto Mono', monospace;
+  
+}
+
+body{
+			max-width: 1275px;
 }
 
 .container{
@@ -11,6 +16,7 @@
   width: 95%;
   margin: 2% auto;
   padding: 0;
+  
 }
 
 .grid_content{
@@ -29,7 +35,8 @@
 }
 
 #image{
-  width: 90%
+  width: 90%;
+  animation: up-down 5s infinite linear;
 }
 
 .grid_content_2 h1{
@@ -44,15 +51,15 @@
 .grid_content_2 p{
   line-height: 1.5rem;
   font-weight: 100;
-  margin-top: 11%;
-  margin-bottom: 5%;
+  margin-top: 9%;
+  margin-bottom: 7%;
   max-width: 70%;
   justify-content: center;
   align-items: center;
   font-weight: 500;
 }
 
-span{
+.grid_content_2 span{
   background: #333;
   padding: 3%;
 }
@@ -104,4 +111,63 @@ footer p a{
     margin-bottom: 5%;
     max-width: 80%;
 
+  }
+
+}
+
+
+@media screen and (max-width: 425px){
+		.container strong{
+				font-size: 1.2em;
+		}		
+				
+	 .grid_content{
+  /*  display: flex;
+    flex-direction: column;
+    margin: 10% auto 50% auto;
+    justify-items: space-between; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center
+   }
+   
+   .grid_content_1{
+   				margin: 0;
+   }
+   
+   .grid_content_1 #image{
+   				width: 70%;
+   }
+   
+   .grid_content_2{
+   				padding: 4% 0;
+   }
+   
+   .grid_content_2 h1{
+   				word-spacing: 1rem;
+   				font-size: 2rem;
+   				line-height: 3rem;
+   				margin: 0;
+   }
+    .grid_content_2 p{
+    				line-height: 1.7rem;
+    				margin-bottom: 10%;
+    				max-width: 70%;
+    }
+    .grid_content_2 span{
+				  padding: 4%;
+				  margin: 3% 0;
+		}
+    footer p{
+    				margin-top: 30%;
+    }
+}
+
+@keyframes up-down{
+				0%{transform: translateY(-10px);}
+				50%{transform: translateY(10px);}
+				75%{transform: translateY(0);}
+				100%{transform: translateY(-10px);}
 }
