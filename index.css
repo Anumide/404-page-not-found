@@ -122,10 +122,6 @@ footer p a{
 		}		
 				
 	 .grid_content{
-  /*  display: flex;
-    flex-direction: column;
-    margin: 10% auto 50% auto;
-    justify-items: space-between; */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
